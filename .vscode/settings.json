@@ -1,0 +1,6 @@
+{
+    "emmet.useInlineCompletions": true,
+    "javascript.suggest.autoImports": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "prettier.tabWidth": 3
+}

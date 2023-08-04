@@ -1,0 +1,79 @@
+
+.user-input {
+  margin-top: 40px;
+  /* margin: auto; */
+  width: 500px;
+  font-size: 1.5em;
+  height: 400px;
+  vertical-align: top;
+  resize: none;
+  border-radius: 9px;
+}
+h1{
+  color: gold;
+}
+body{
+  background:linear-gradient(130deg,rgb(8, 69, 238),rgb(143, 26, 12),rgb(14, 97, 149));
+}
+#test {
+  color: #e2ebee;
+}
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+  background-color: transparent;
+  height: 700px;
+}
+.btn-container{
+  position: absolute;
+  bottom: 185px;
+  display: flex;
+  column-gap: 20px;
+}
+button{
+  width: fit-content;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aqua;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color:blue;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: green;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 10px 2px black;
+}
+hr{
+  position: absolute;
+  bottom: 130px;
+  left: 30%;
+  width: 42%;
+  border-bottom: 2px solid white;
+}
+h3{
+  color: white;
+}
+.text-summury{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+input[type="radio"]{
+  background-color: aqua;
+  width: 20px;
+  scale: 3;
+}
+.dark-mode{
+  position: relative;
+  top: 35px;
+  right:27%;
+}
+CustAlert{
+  /* position: absolute;
+  bottom: 50%; */
+}

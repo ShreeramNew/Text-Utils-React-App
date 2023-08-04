@@ -1,0 +1,25 @@
+.alert-container{
+    width: 40%;
+    height: 20%;
+    background-color: rgb(53, 172, 73);
+    position:absolute;
+    top:37%;
+    left: 30%;
+    right: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+#alert-msg{
+    color: rgb(246, 53, 0);
+}
+.close-btn{
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    background: none;
+    color: white;
+    font-weight: bold;
+}
+.close-btn:hover{
+    background: none;
+}
