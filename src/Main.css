@@ -13,7 +13,7 @@ h1{
   color: gold;
 }
 body{
-  background:linear-gradient(130deg,rgb(8, 69, 238),rgb(143, 26, 12),rgb(14, 97, 149));
+  /* background:linear-gradient(130deg,rgb(8, 69, 238),rgb(143, 26, 12),rgb(14, 97, 149)); */
 }
 #test {
   color: #e2ebee;
@@ -73,7 +73,6 @@ input[type="radio"]{
   top: 35px;
   right:27%;
 }
-CustAlert{
-  /* position: absolute;
-  bottom: 50%; */
+.show-totalCount{
+color: black;
 }

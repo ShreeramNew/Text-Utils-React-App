@@ -1,0 +1,18 @@
+.Nav-bar{
+    display: flex;
+    column-gap: 10px;
+}
+.nav-container{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.nav-links{
+    text-decoration: none;
+}
+.nav-links:hover{
+    text-decoration: underline;
+}
+.nav-links.active{
+    color: rgb(46, 18, 112);
+    font-weight: bold;
+}
