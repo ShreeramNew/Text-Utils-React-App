@@ -13,13 +13,14 @@ export default function MainArea() {
    const [btnState, setBtnState] = useState("Dark Mode");
    const [noOfWords, setNoOfWords] = useState(0);
    const [showAlert, setshowAlert] = useState(false);
+   const [copyTextBtn, setCopyTextBtn] = useState("COPY");
 
    //Function declaration
 
    let checkValue = (event) => {
       //On Change
       setText(event.target.value);
-      setNoOfWords(text.split(" ").length);
+      setNoOfWords(text.split(" ").filter((element) => element.length !== 0).length);
    };
 
    function Upper() {
@@ -64,6 +65,17 @@ export default function MainArea() {
       setshowAlert(false);
    }
 
+   function handleCopy() {
+      //Handles "Copy text" button
+      let textToCopy = document.querySelector(".user-input").value;
+      navigator.clipboard.writeText(textToCopy).then(() => {
+         setCopyTextBtn("Copied!!");
+         setTimeout(() => {
+            setCopyTextBtn("Copy Text");
+         }, 2000);
+      });
+   }
+
    //Final component to return
    return (
       <>
@@ -81,16 +93,26 @@ export default function MainArea() {
             ></textarea>
             <br />
             <div className="btn-container">
-               <button className="submit-upper" onClick={Upper}>
+               <button data-tooltip="Upper Case" className="tooltip submit-upper" onClick={Upper}>
                   UPPER CASE
                </button>
-               <button className="submit-lower" onClick={Lower}>
+               <button data-tooltip="Lower Case" className="tooltip submit-lower" onClick={Lower}>
                   LOWER CASE
                </button>
-               <button className="submit-first-upper" onClick={firstUpper}>
+               <button
+                  data-tooltip="First letter upper"
+                  className="tooltip submit-first-upper"
+                  onClick={firstUpper}
+               >
                   FIRST LETTER UPPER
                </button>
-               <button onClick={clearText}>CLEAR</button>
+               <button onClick={handleCopy} className="tooltip copy-button" data-tooltip="Copy">
+                  {copyTextBtn}
+               </button>
+
+               <button data-tooltip="Clear Text" className="tooltip" onClick={clearText}>
+                  CLEAR
+               </button>
             </div>
 
             <div className="text-summury">
