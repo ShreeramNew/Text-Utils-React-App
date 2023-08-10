@@ -1,0 +1,35 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:svgjs="http://svgjs.com/svgjs"
+   width="400"
+   height="400"
+>
+   <svg xmlns="http://www.w3.org/2000/svg" height="400" width="400">
+      <defs>
+         <filter id="SvgjsFilter1000" height="200" width="200">
+            <feOffset result="offset" in="SourceAlpha" dx="5" dy="4"></feOffset>
+            <feGaussianBlur result="blur" in="offset" stdDeviation="3"></feGaussianBlur>
+            <feBlend in="blur" in2="SourceGraphic" mode="normal"></feBlend>
+         </filter>
+      </defs>
+      <text
+         x="100"
+         y="200"
+         font-size="4rem"
+         fill="#1c0e7a"
+         filter="url(#shadow)"
+         svgjs:data='{"leading":"1.3"}'
+      >
+         TxtUtils
+      </text>
+   </svg>
+   <style>
+      @media (prefers-color-scheme: light) {
+         :root {
+            filter: none;
+         }
+      }
+   </style>
+</svg>
